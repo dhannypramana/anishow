@@ -94,10 +94,10 @@ const animeByGenre = (genreId, genreName) => {
 
 onMounted(() => {
   setTimeout(setAnime, 1000)
-  setTimeout(setCharacters, 1000)
-  setTimeout(setStaffs, 1000)
-  setTimeout(setReviews, 1000)
-  setTimeout(setRecommendations, 1000)
+  setTimeout(() => setCharacters(), 1000)
+  setTimeout(() => setStaffs(), 1000)
+  setTimeout(() => setReviews(), 3000)
+  setTimeout(() => setRecommendations(), 3000)
 })
 </script>
 
@@ -385,7 +385,7 @@ onMounted(() => {
               </div>
             </div>
             <!-- Reviews -->
-            <div class="meta-box shadow-sm mt-4 py-3">
+            <div class="meta-box shadow-sm mt-4 py-3" v-if="isFinished">
               <div class="px-3">
                 <h5>Reviews</h5>
                 <hr>
@@ -401,7 +401,7 @@ onMounted(() => {
                 <h5>Recommendations</h5>
                 <hr>
               </div>
-              <div class="d-flex">
+              <div class="d-flex" v-if="isFinished">
                 <Cover
                     v-for="recommendation in recommendations"
                     :key="recommendation.entry.mal_id"
