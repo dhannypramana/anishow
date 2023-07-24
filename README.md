@@ -1,35 +1,32 @@
-# anishow
+# Anishow
+Online Anime Database <br />
+Exercise with Vue3 Composition API, Vite,  VueRouter, and Pinia
 
-This template should help get you started developing with Vue 3 in Vite.
+## Prototype is Deployed at
+### [Anishow](https://anishow.netlify.app)
 
-## Recommended IDE Setup
+# How To Run?
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 1. Clone This Repository
+```shell
+git clone https://github.com/dhannypramana/anishow
+````
+### 2. Move to Project's Folder
+```shell
+cd anishow
+````
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+### 3. Install Package
+```shell
 npm install
-```
+````
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+### 4. Run Lint
+```shell
 npm run lint
+````
+
+### 5. Run Local Development Server
+```shell
+npm run dev
 ```
